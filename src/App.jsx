@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
+       <Navbar/>
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route
@@ -39,8 +39,10 @@ function App() {
           <Route path="/checkout" element={<CheckOut />} />
           <Route path="/confirm" element={<OrderConfirmed />} />
           <Route path="/login" element={<LoginSignUp />} />
-        </Routes>
-        <Footer />
+          </Routes>
+          <Footer/>
+        
+      
       </BrowserRouter>
     </div>
   );

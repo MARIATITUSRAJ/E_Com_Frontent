@@ -1,13 +1,13 @@
-// import React, { useContext, useEffect } from 'react'
+//import React, { useContext, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import "./CSS/OC.css"
-// import { ShopContext } from '../Context/ShopContext';
+//import { ShopContext } from '../Context/ShopContext';
 
 const OrderConfirmed = () => {
-  // const {removeFromCart} = useContext(ShopContext);
+  //const {removeFromCart} = useContext(ShopContext);
 
-  // useEffect(() => {
-  //   removeFromCart([])
+   //useEffect(() => {
+     //removeFromCart([])
   // },[])
   const navigate = useNavigate();
   const goBack = () => navigate("/");
