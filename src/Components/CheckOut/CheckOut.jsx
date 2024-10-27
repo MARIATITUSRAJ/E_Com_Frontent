@@ -1,5 +1,5 @@
 import React from "react";
-import "./CheckOut.css";
+import './CheckOut.css';
 import { countries } from "countries-list";
 import { useNavigate } from "react-router-dom";
 
@@ -44,7 +44,7 @@ const CheckOut = () => {
         <div className="form-group">
           <label htmlFor="phone_field">Phone No</label>
           <input
-            type="phone"
+            type="tel"
             id="phone_field"
             className="form-control"
             required
@@ -90,4 +90,4 @@ const CheckOut = () => {
   );
 };
 
-export default CheckOut;
+export default CheckOut; 

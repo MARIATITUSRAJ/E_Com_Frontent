@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const CartItems = () => {
-  const {all_product, cartItems, removeFromCart, getTotalCartAmount} = useContext(ShopContext);
+  const {allproduct, cartItems, removeFromCart, getTotalCartAmount} = useContext(ShopContext);
   const navigate = useNavigate();
   const handleCheckout = () => {
    if(getTotalCartAmount() === 0){
@@ -27,7 +27,7 @@ const CartItems = () => {
         <p>Remove</p>
       </div>
       <hr />
-      {all_product.map((e , i) => {
+      {allproduct.map((e , i) => {
         if (cartItems[e.id] > 0) {
           return <div key={i}>
               <div className="cartitems-format cartitems-format-main">

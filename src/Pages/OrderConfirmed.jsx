@@ -1,6 +1,6 @@
 //import React, { useContext, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
-import "./CSS/OC.css"
+import './CSS/OC.css'
 //import { ShopContext } from '../Context/ShopContext';
 
 const OrderConfirmed = () => {
@@ -8,7 +8,7 @@ const OrderConfirmed = () => {
 
    //useEffect(() => {
      //removeFromCart([])
-  // },[])
+   //},[])
   const navigate = useNavigate();
   const goBack = () => navigate("/");
   return (

@@ -1,15 +1,30 @@
 import React from "react";
 import "./Popular.css";
-import data_product from "../Assets/data";
+import popularProducts from "../Assets/data";
 import Item from "../Item/Item";
 
 const Popular = () => {
+  //const [popularProducts,setPopularProducts] = useState([]);
+  //useEffect(() => {
+    //fetch('https://localhost:5000/popularinwomen')
+      //.then((response) => {
+        //if (!response.ok) {
+          //throw new Error('Network response was not ok');
+       // }
+        //return response.json();
+      //})
+      //.then((data) => setPopularProducts(data))
+      //.catch((error) => {
+        //console.error('There has been a problem with your fetch operation:', error);
+      //});
+  //}, []);
+  
   return (
     <div className="popular">
       <h1>Popular in Women</h1>
       <hr />
       <div className="popular-item">
-        {data_product.map((item, i) => {
+        {popularProducts.map((item, i) => {
           return <Item
               key={i}
               id={item.id}
