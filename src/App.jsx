@@ -6,7 +6,7 @@ import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
 import LoginSignUp from "./Pages/LoginSignUp";
 import Footer from "./Components/Footer/Footer";
-import Shop from "./Pages/Shop";
+import Shop from "./Pages/Shop"
 import men_banner from "./Components/Assets/banner_mens.png"
 import women_banner from "./Components/Assets/banner_women.png"
 import kid_banner from "./Components/Assets/banner_kids.png"
@@ -39,10 +39,8 @@ function App() {
           <Route path="/checkout" element={<CheckOut />} />
           <Route path="/confirm" element={<OrderConfirmed />} />
           <Route path="/login" element={<LoginSignUp />} />
-          </Routes>
-          <Footer />
-        
-      
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
