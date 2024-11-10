@@ -1,6 +1,6 @@
-import "./App.css";
+import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar"; 
 import ShopCategory from "./Pages/ShopCategory";
 import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
@@ -15,9 +15,9 @@ import OrderConfirmed from "./Pages/OrderConfirmed";
 
 function App() {
   return (
-    <div>
+    <>
       <BrowserRouter>
-        <Navbar />
+      <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route
@@ -42,8 +42,8 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </div>
+      
+    </>
   );
 }
-
 export default App;
